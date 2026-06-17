@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cd app && npx vite build && mkdir -p ../public && cp -r dist/* ../public/",
-    "vercel-build": "cd app && npx vite build && mkdir -p ../public && cp -r dist/* ../public/"
+    "vercel-build": "npx vite build && mkdir -p public && cp -r app/dist/* public/"
   },
   "dependencies": {
     "openai": "^4.70.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.12",
+    "@vitejs/plugin-react": "^6.0.1"
   }
 }
