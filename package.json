@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "vercel-build": "npx vite build && rm -rf public && mkdir -p public && cp -r app/dist/* public/"
+    "vercel-build": "npx vite build"
   },
   "dependencies": {
     "openai": "^4.70.0"
